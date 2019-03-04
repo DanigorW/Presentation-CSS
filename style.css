@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+a {
+    text-decoration: none;
+    background: #232323;
+    padding: 0.5rem;
+    margin: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 2rem rgba(0,0,0,.5);
+    transition: all .5s;
+    animation: button 3.5s;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+ 
+.box-container p {
+    width: 50%;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.3rem;
+    animation: per 3.5s;
+}
+
+.box-container h1 {
+    color: #fff;
+    text-align: center;
+    margin: 1rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    animation: header 3.5s;
+}
+
+.a-link {
+    display: flex;
+
+}
+
+.box-1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: lightskyblue;
+}
+.box-2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: lightgreen;
+}
+.box-3 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: lightpink;
+}
+.box-4 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: lightseagreen;
+}
+
+@keyframes header {
+    0%{transform: translateY(-1000px)}
+    100%{transform: translateY(0)}
+}
+
+
+@keyframes per {
+    0%{transform: translateX(-2000px)}
+    100%{transform: translateX(0)}
+}
+
+@keyframes button {
+    0%{transform: translateY(2000px)}
+    100%{transform: translateY(0)}
+}
